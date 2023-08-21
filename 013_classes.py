@@ -21,6 +21,10 @@ class game:
 
     def getYear (self, year):
         self.year = year
+
+    @staticmethod
+    def display():
+        print("\nUnlike regular methods, static methods do not have access to the instance or class attributes.")
     
 game1 = game("Witcher 3", "RPG", "2015")
 
@@ -38,3 +42,6 @@ print(game1.name)
 
 print(f"\n- The object game1 -\nName: {game1.name}\nType: {game1.type}\nYear: {game1.year}")
 #Formatted String Literals or F-Strings are more efficient and don't require type conversion in expressions
+
+game.display()
+game1.display()
