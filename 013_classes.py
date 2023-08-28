@@ -1,8 +1,11 @@
 class game:
+    gamecount = 0
+
     def __init__ (self,name,type,year):
         self.name = name
         self.type = type
         self.year = year
+        game.gamecount += 1
 
     def getName (self):
         return self.name
@@ -42,6 +45,11 @@ print(game1.name)
 
 print(f"\n- The object game1 -\nName: {game1.name}\nType: {game1.type}\nYear: {game1.year}")
 #Formatted String Literals or F-Strings are more efficient and don't require type conversion in expressions
+
+game1 = game("AC Origins", "RPG", "2016")
+game1 = game("Mass Effect Andromeda", "RPG", "2017")
+
+print(f"No. of games = {game.gamecount}")
 
 game.display()
 game1.display()
