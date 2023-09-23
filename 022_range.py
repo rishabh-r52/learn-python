@@ -1,0 +1,12 @@
+numbers = range(3,-4)
+# --prints range(3, -4)
+numbers = range(-5)
+# --prints range(0, -5)
+numbers = range(-9,5)
+# --prints range(-9, 5)
+numbers = range(5) 
+# --prints range(0, 5)
+numbers = range(0, 5) 
+# --prints range(0, 5)
+
+print(numbers)
